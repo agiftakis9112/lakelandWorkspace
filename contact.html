@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<style>
+
+   body {
+   background-image: url("est.jpg");
+   background-color:black;
+   background-size:contain;
+   opacity:0.1;
+   transition:opacity 2s;
+}
+	
+</style>
+ <script>
+  function myMoveIn() {
+    var elem = document.getElementsByClassName("topnav");
+	var op = document.getElementsByTagName("BODY")[0];
+    var pos = 0;
+    var id = setTimeout(frame, 300);
+    function frame() {
+            var newPosTop=9.3;
+            var newPosLeft=10; 
+            elem[0].style.marginTop = newPosTop + '%'; 
+			elem[0].style.left= newPosLeft + '%'; 
+			op.style.opacity=0.89;
+			
+   }
+}
+
+   function foHide() {
+     var fo = document.getElementsByClassName("callout");
+	 fo[0].style.opacity=0.99;
+	 var x=document.getElementsByTagName("INPUT");
+	   for( i=0; i<7 ; i++){
+	 x[i].value="";
+	 }
+	 document.getElementById("output").value = "";
+}
+ </script>
+</head>
+<body onload='myMoveIn()'>
+
+
+
+<div id="mainblock">
+
+<div class="topnav" id="myTopnav">
+  <a href="#icon" class="active"><img height="42" width="42" src="G_letter.jpg"/></a>
+  <a href="index.html" >Home</a>
+  <a href="services.html">IT Services</a>
+  <a href="support.html">IT Support</a>
+  <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+
+<div class="header" style="width:100%; height:3%; text-align:center; opacity: 0.72;">
+
+<h2 style='color:white; font-weight:bold; font-size:30px;  font-family:Lucida Console", Monaco, monospace;'>
+ CONTACT<span style="color:#FB2B11;">OUR STAFF</span></h2>
+
+ </div> <!--end of header div -->
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<div id="mainContact">
+ <h2 style="margin-left:10%; text-align:center; font-family:Impact, Charcoal, sans-serif;">
+ <u>GET IN TOUCH WITH OUR KNOWLEDGEABLE TEAM</u></h2>
+      <form id="formOne">
+        <fieldset id="contactinfo">
+		<legend style="color:floralwhite;">We Appreciate Any Comments You Leave With Us:</legend>
+		 <label for="firstname">
+            First Name
+          </label><br>
+          <input type="text" id="first" name="firstName" required /><br>
+		   <label for="lastname">
+            Last Name
+          </label><br>
+          <input type="text" id="last" name="lastname" required /><br>
+		   <label for="email">
+            Email
+          </label><br>
+          <input type="email" id="mail" name="Email" required/><br>
+		   <label for="cityinput">
+            City
+          </label><br>
+          <input type="text" id="cityinput" name="City" required/><br>
+          <label for="addrinput">
+            Street Address
+          </label><br>
+          <input type="text" id="addrinput" name="Address" required/><br>
+          <label for="stateinput">
+            State/Province
+          </label><br>
+          <input type="text" id="stateinput" name="State" maxlength="2"/><br>
+          <label for="zipinput" style="margin-left:40%;">
+            Zip/Postal Code
+          </label><br>
+          <input type="number" id="zipinput" name="Zip" style="margin-left:40%;"/><br>
+		  <label style="margin-left:40%;">Comments</label><br>
+		  <textarea id="output" rows="4" cols="150" style="margin-left:40%;width:220px;" placeholder="please feel free to comment here...">
+		  </textarea><br>
+        </fieldset><br><br>
+        <fieldset id="submitsection">
+          <input type="button" id="submit" value="Submit" style="margin-left:40%; margin-bottom:20px; width:100px;" onclick="foHide()"/>
+        </fieldset>
+     </form>
+
+</div><!-- end of mainContact Div -->
+
+<div class="callout">
+  <div class="callout-header"><span style="color:#39ff14;">SUCCESS &#10004;</span></div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <div class="callout-container">
+    <p> <strong><i>the info you submitted is on its way and will be kept private at all times!!</i></strong></p>
+  </div>
+</div>
+
+
+</div><!--end of mainblock div -->
+<div id="footer" > 
+   <div id="divOne">
+        <div id="divTwo">
+            <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="services.html">IT Services</a></li>
+           <li><a href="support.html">IT Support</a></li>
+          <li><a href="#contact">Contact</a></li>	 
+          <li>	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.465685685522!2d-88.37763828524389!3d39.4813980199143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887311dbc9c141bf%3A0x2d2c3eafc972276d!2s1701+IL-16%2C+Mattoon%2C+IL+61938!5e0!3m2!1sen!2sus!4v1542167736108"
+          width="99%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe><p style="color:red;"> 
+          HEADQUARTERS: 1701 IL-16, SUITE 1600 | MATTOON, IL 61938-4126</p></li>
+          <li style="color:red;">E-MAIL:<span style="color:blue;"><a href="mailto:georgevarios@gollotechsolutions.com">
+		  georgevarios@gollotechsolutions.com</a></span>&nbsp; |&nbsp; PHONE:<span style="color:blue;">(217)254-9365</span></li>
+       </ul>
+   </div><!--end of divTwo -->
+   <p style="color:red;text-decoration:underline;font-size:8px;text-align:center;font-family:Lucida Console, Monaco, monospace;">
+   <a href="privacy.html">PRIVACY</a></p>
+</div><!--end of divOne -->
+</div><!--end of footer div -->
+
+
+
+</body>
+</html>

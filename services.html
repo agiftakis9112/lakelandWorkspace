@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<style>
+
+   body {
+   background-image: url("brightCityLights.jpg");
+   background-color:black;
+   background-size: cover;
+   opacity:0.1;
+   transition:opacity 2s;
+}
+
+	
+</style>
+ <script>
+  function myMoveIn() {
+    var elem = document.getElementsByClassName("topnav");
+	var op = document.getElementsByTagName("BODY")[0];
+    var pos = 0;
+    var id = setTimeout(frame, 300);
+    function frame() {
+            var newPosTop=9.3;
+            var newPosLeft=10; 
+            elem[0].style.marginTop = newPosTop + '%'; 
+			elem[0].style.left= newPosLeft + '%'; 
+			op.style.opacity=0.89;
+   }
+}
+
+  
+ </script>
+</head>
+<body onload='myMoveIn()'>
+
+
+
+<div id="mainblock">
+
+<div class="topnav" id="myTopnav">
+  <a href="#icon" class="active"><img height="42" width="42" src="G_letter.jpg"/></a>
+  <a href="index.html" >Home</a>
+  <a href="#services">IT Services</a>
+  <a href="support.html">IT Support</a>
+  <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+
+<div class="header" style="width:100%; height:3%; text-align:center; opacity: 0.72;">
+
+<h2 style='color:white; font-weight:bold; font-size:30px;  font-family:Lucida Console", Monaco, monospace;'>
+ SERVICE<span style="color:#FB2B11;">ESSENTIALS</span></h2>
+
+ </div> <!--end of header div -->
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<div id="assess"> <p>
+<img height="32" width="92" src="purpledots.jpg" style="float:left;"/>
+<mark style="opacity:0.7;">Assessments</mark><br>
+<p style="margin-left:8px;">All newly managed clients take part in our IT Managed Services 
+Preparedness Assessment, a diagnostic tool we use to ensure the general 
+health of their systems.We also leverage several proprietary processes to conduct 
+additional assessments as an ongoing 
+benchmarking service, including our IT Operational Maturity Index Assessment and our 
+complete IT Technology Assessment.
+These detailed assessments can be customized and provided 
+with unbiased, third-party insight and metrics that 
+can be used to measure periodic performance improvements,bottlenecks and possible intranet threats.<br>
+
+<img height="32" width="92" src="purpledots.jpg" style="float:left;"/>
+<mark style="opacity:0.7;">Every journey </mark><br>
+
+<p style="margin-left:8px;"> Starts with a good plan,accurate route and perseverance.
+Understanding where you are and listening to where you want to be 
+to support your business gives us a good baseline to start from.
+
+By conducting one or more IT assessments, 
+we customize your roadmap, incorporating our joint goals of 
+scalability, productivity, security, and cost optimization.
+Once your roadmap is formulated, we revise it as often as needed 
+through reviews and senior-level discussions.
+
+Planing for what is ahead means our Seniour Architects are looking 
+into the future and thus continually evolving whatever  
+we build for you that's in line with emerging technology..</p>
+</div><!-- end of assess div -->
+
+<div id="service">
+<img height="120" width="194" src="gserviceIT.jpg" style="float:left;"/>
+<p style="margin-left:8px;">
+<strong style="color:#de1738;">Assessment and Management</strong><br>
+At Gollotech, we have invested in a best-practice implementation of our platforms, integrated it with our selected 
+toolsets, and have customized it for ideal use in the mid-market.It is what we use internally to deliver all of our managed services<em>(aside from the expertise of our well
+trained staff)</em>,so the essentials of Gollotech
+come with any managed service we provide.<br>
+
+However, you can also leverage the full capabilities of our ITSM platform by purchasing licenses for your
+ IT department that can scale as your usage grows.
+
+Whether we serve as your complete IT department, collaborate with your internal technical staff,act as a third party IT managed solution tool
+or just simply offer you a ready-made, yet customizable ITSM platform that you can also license out,
+your organization will reap the benefits of leveraging a ServiceNow platform that is implemented and 
+ maintained to our highest standards.<br><br>
+<p/>
+</div><!-- end of service div -->
+
+<div id="infra">
+<img height="120" width="194" src="ginfrastructure.jpg" style="float:left;"/>
+<p style="margin-left:8px;">
+<strong style="color:#de1738;">Infrastructure Monitoring and Management</strong><br>
+
+Our 24x7x365 Network Operations Center (NOC) has developed in pace with our goals due to many hours of monitoring 
+and managing sensitive data centers within industry.We configure and fine-tune our monitoring 
+platform across your organization network,storage devices, physical and virtual servers,applications and databases.
+We establish a detailed remediation and escalation process, either serving as your complete IT department or working in close collaboration with yours,around the clock if necessary.
+We also follow strict patch application and remediation processes, including reporting, to ensure that you are protected from known cybersecurity threats.<br><br>
+</p>
+
+</div><!-- end of infra div -->
+
+<div id="work">
+<img height="120" width="194" src="gwork.jpg" style="float:left;"/>
+<p style="margin-left:8px;">
+<strong style="color:#de1738;">Workstation Management</strong><br>
+Using our comprehensive GollotechWorks platform,we track,maintain,and manage all your workstations to ensure they are standardized for each user,
+and configured according to scalable standards.<br>
+In fact, we believe so much in establishing consistency in client terminal user experience that we have a few engineers dedicated to just this function.  
+It is part of our cohesive journey towards improving overall enterprise wide IT managed services.
+ <br><br>
+</p>
+
+</div><!-- end of work div -->
+
+<div id="backup">
+<img height="120" width="194" src="gbackup.jpg" style="float:left;"/>
+<p style="margin-left:8px;">
+<strong style="color:#de1738;">Backup, Disaster Recovery and Operations Continuity</strong><br>
+The cloud backup and disaster recovery landscapes persistently change at rapid rate, and after a diligent review of all enterprise-grade solutions,Gollotechs IT Strategy team has elected to integrate extensive RAID10 and RAID50 
+into our platform ( which is a great balance between capacity, performance, and reliability ).Gollotech is striving to be a leader in the cloud backup space industry and our best-in-class solutions have a solid reputation for quality and reliability.
+Our platform ensures our clients can recover from malfunctions and ransomware attacks quickly, mitigating risk and increasing productivity and security. As we continue to Leverage proprietary technologies, 
+image-based backup,and a hybrid cloud-based model,our platform will not only be able to backup data but recover entire systems in a matter of minutes.
+ <br><br>
+</p>
+
+</div><!-- end of backup div -->
+
+
+</div><!--end of mainblock div -->
+<div id="footer" >
+   <div id="divOne">
+        <div id="divTwo">
+            <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="#services">IT Services</a></li>
+           <li><a href="support.html">IT Support</a></li>
+          <li><a href="contact.html">Contact</a></li>	 
+          <li>	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.465685685522!2d-88.37763828524389!3d39.4813980199143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887311dbc9c141bf%3A0x2d2c3eafc972276d!2s1701+IL-16%2C+Mattoon%2C+IL+61938!5e0!3m2!1sen!2sus!4v1542167736108"
+          width="99%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe><p style="color:red;"> 
+          HEADQUARTERS: 1701 IL-16, SUITE 1600 | MATTOON, IL 61938-4126</p></li>
+          <li style="color:red;">E-MAIL:<span style="color:blue;"><a href="mailto:georgevarios@gollotechsolutions.com">
+		  georgevarios@gollotechsolutions.com</a></span>&nbsp; |&nbsp; PHONE:<span style="color:blue;">(217)254-9365</span></li>
+       </ul>
+   </div><!--end of divTwo -->
+   <p style="color:red;text-decoration:underline;font-size:8px;text-align:center;font-family:Lucida Console, Monaco, monospace;">
+   <a href="privacy.html">PRIVACY</a></p>
+</div><!--end of divOne -->
+</div><!--end of footer div -->
+
+
+
+</body>
+</html>

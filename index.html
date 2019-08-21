@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<script>
+  function myMoveIn() {
+    var elem = document.getElementsByClassName("topnav");
+    var pos = 0;
+    var id = setTimeout(frame, 300);
+    function frame() {
+            var newPosTop=30;
+            var newPosLeft=10; 
+            elem[0].style.marginTop = newPosTop + '%'; 
+			elem[0].style.left= newPosLeft + '%'; 
+   }
+}
+
+
+ </script>
+ 
+</head>
+<body onload='myMoveIn()'style="opacity:0.9;">
+
+
+
+<div id="mainblock">
+
+<div class="topnav" id="myTopnav">
+  <a href="#icon" class="active"><img height="42" width="42" src="G_letter.jpg"/></a>
+  <a href="#index" >Home</a>
+  <a href="services.html" >IT Services</a>
+  <a href="support.html">IT Support</a>
+  <a href="contact.html">Contact</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+
+<div class="header" style="width:100%; background-color:black;">
+
+<h2 style='color:white; font-weight:bold; font-size:30px; font-family:Arial narrow,sans-serif;'>
+<img height="300" width="300" src="gollotechMainHead.jpg"/>
+ Gollo Tech Solutions High-performing IT Service Management </h2>
+
+ </div> <!--end of header div -->
+ 
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+</div><!--end of mainblock div -->
+
+<div id="footer" >
+   <div id="divOne">
+        <div id="divTwo">
+            <ul>
+           <li><a href="#index">Home</a></li>
+           <li><a href="services.html">IT Services</a></li>
+           <li><a href="support.html">IT Support</a></li>
+          <li><a href="contact.html">Contact</a></li>	 
+          <li>	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.465685685522!2d-88.37763828524389!3d39.4813980199143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887311dbc9c141bf%3A0x2d2c3eafc972276d!2s1701+IL-16%2C+Mattoon%2C+IL+61938!5e0!3m2!1sen!2sus!4v1542167736108"
+          width="99%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe><p style="color:red;"> 
+          HEADQUARTERS: 1701 IL-16, SUITE 1600 | MATTOON, IL 61938-4126</p></li>
+          <li style="color:red;">E-MAIL:<span style="color:blue;"><a href="mailto:georgevarios@gollotechsolutions.com">
+		  georgevarios@gollotechsolutions.com</a></span>&nbsp; |&nbsp; PHONE:<span style="color:blue;">(217)254-9365</span></li>
+       </ul>
+   </div><!--end of divTwo -->
+   <p style="color:red;text-decoration:underline;font-size:8px;text-align:center;font-family:Lucida Console, Monaco, monospace;">
+   <a href="privacy.html">PRIVACY</a></p>
+</div><!--end of divOne -->
+</div><!--end of footer div -->
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<style>
+
+   body {
+   background-image: url("gollosupportbackbig.jpg");
+   background-color:black;
+   background-size: cover;
+   opacity:0.1;
+   transition:opacity 2s;
+}
+
+	
+</style>
+ <script>
+  function myMoveIn() {
+    var elem = document.getElementsByClassName("topnav");
+	var op = document.getElementsByTagName("BODY")[0];
+    var pos = 0;
+    var id = setTimeout(frame, 300);
+    function frame() {
+            var newPosTop=9.3;
+            var newPosLeft=10; 
+            elem[0].style.marginTop = newPosTop + '%'; 
+			elem[0].style.left= newPosLeft + '%'; 
+			op.style.opacity=0.89;
+   }
+}
+
+  
+ </script>
+</head>
+<body onload='myMoveIn()'>
+
+
+
+<div id="mainblock">
+
+<div class="topnav" id="myTopnav">
+  <a href="#icon" class="active"><img height="42" width="42" src="G_letter.jpg"/></a>
+  <a href="index.html" >Home</a>
+  <a href="services.html">IT Services</a>
+  <a href="#support">IT Support</a>
+  <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+
+<div class="header" style="width:100%; height:3%; text-align:center; opacity: 0.72;">
+
+<h2 style='color:white; font-weight:bold; font-size:30px;  font-family:Lucida Console", Monaco, monospace;'>
+ IT SUPPORT<span style="color:floralwhite;">ESSENTIALS</span></h2>
+
+ </div> <!--end of header div -->
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+<div id="support" style="background-image: url('TechSupport.jpg')";>
+<img height="150" width="194" src="gsupport.jpg" style="float:left; margin-right:5px;"/>
+<p style="margin-left:8px; opacity:0.99;">
+<strong style="color:#de1738;">Support Managed Services</strong><br>
+At Gollotech, Managed Services is a defined set of onsite or remotely delivered services that are prepaid for on a recurring basis.
+ Services are scheduled, and systems are monitored preventative and proactive in nature instead of the more traditional method of reacting to problems and paying bills on a time and materials basis.
+
+For clients not wishing to invest in their own IT Departments or support infrastructures, taking advantage 
+of Gollotechs Managed IT Support Services is the perfect way to leverage our vast expertise and knowledge in IT.  Additionally it allows you to leverage our world-class infrastructure and best-in-class solutions.
+
+Through our Managed IT Solutions, Gollotech delivers the highest quality technical expertise delivered by 
+South Central USA most sophisticated IT Service Teams. Our Managed Services Team works with clients in a wide variety of business markets that include banking, manufacturing, law, government and healthcare..<br><br>
+<strong style="color:#de1738;">OUR BASIC SUPPORT PACKAGE:</strong><br>
+<ul id="supportlist" type="disc" style="display:block;">
+<li>Desktop support and end-user support</li>
+<li>Onsite and remote support</li>
+<li>Remote desktop manager services: 24x7x365 remote monitoring, support, and emergency dispatch</li>
+<li>Reactive support, quick response to issues and alarms</li>
+<li>Proactive support ,maintenance, patching, malware</li>
+<li>Cost effective and efficient shared resources so you only pay for what you need</li>
+<li>Single point of contact for issue resolution, vendor management and troubleshooting</li>
+<li>Individual assistance which improves productivity and customer satisfaction</li>
+</ul>
+<p/>
+</div><!-- end of support div -->
+
+
+
+
+
+</div><!--end of mainblock div -->
+<div id="footer" >
+   <div id="divOne">
+        <div id="divTwo">
+            <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="services.html">IT Services</a></li>
+           <li><a href="#Support">IT Support</a></li>
+          <li><a href="contact.html">Contact</a></li>	 
+          <li>	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.465685685522!2d-88.37763828524389!3d39.4813980199143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887311dbc9c141bf%3A0x2d2c3eafc972276d!2s1701+IL-16%2C+Mattoon%2C+IL+61938!5e0!3m2!1sen!2sus!4v1542167736108"
+          width="99%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe><p style="color:red;"> 
+          HEADQUARTERS: 1701 IL-16, SUITE 1600 | MATTOON, IL 61938-4126</p></li>
+          <li style="color:red;">E-MAIL:<span style="color:blue;"><a href="mailto:georgevarios@gollotechsolutions.com">
+		  georgevarios@gollotechsolutions.com</a></span>&nbsp; |&nbsp; PHONE:<span style="color:blue;">(217)254-9365</span></li>
+       </ul>
+   </div><!--end of divTwo -->
+   <p style="color:red;text-decoration:underline;font-size:8px;text-align:center;font-family:Lucida Console, Monaco, monospace;">
+   <a href="privacy.html">PRIVACY</a></p>
+</div><!--end of divOne -->
+</div><!--end of footer div -->
+
+
+
+</body>
+</html>
